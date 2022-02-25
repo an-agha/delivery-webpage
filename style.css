@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600&family=Mukta:wght@300;400;500;600;800&family=Nunito:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600&family=Rancho&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    /* display: flex;
+    flex-direction: column; */
+}
+.logo{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw ;
+}
+.fa-bars{
+    color: #0064D9;
+}
+.logo img{
+    width: 30%;
+    height: 80%;
+}
+ul{
+    width: 100%;
+    height: 93vh;
+    padding: 15vh 0;
+    background: #2c3e50;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    left: -100%;
+    transition: all 0.5s;
+    top: 7vh;
+    z-index: 10;
+}
+li{
+    width: 30vw;
+    height: 5vh;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li:hover{
+   
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #0064D9;
+}
+.paragraphClass{
+    left: 0; 
+}
+ /* header portion */
+
+ header{
+     width: 100%;
+     height: 64vh;
+     background-image: url("/image/new.png");
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     padding: 0 5vw;
+
+ }
+ header h1{
+     font-size: 24pt;
+     font-weight: 600;
+     color: #2D2D2D;
+ }
+ header span{
+     font-size: 10pt;
+     color: #9D9D9D;
+ }
+ header button{
+     width: 40vw;
+     height: 5vh;
+     background: linear-gradient(90deg, #7D83FF 0%, #0064D9 100%);
+     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+     border-radius: 10px;
+     border: none;
+     color: #FFF;
+     font-weight: 500;
+     font-size: 12pt;
+ }
+.card{
+    width: 90%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(93.44deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* client */
+.client{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.client img{
+    width: 40%;
+}
