@@ -8,8 +8,8 @@
 }
 nav{
     width: 100%;
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
 }
 .logo{
     width: 100%;
@@ -29,9 +29,6 @@ nav{
 ul{
     width: 100%;
     height: 93vh;
-    padding: 15vh 0;
-    background: #2c3e50;
-    color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,6 +38,10 @@ ul{
     transition: all 0.5s;
     top: 7vh;
     z-index: 10;
+    padding: 15vh 0;
+    background: #2c3e50;
+    color: #fff;
+    
 }
 li{
     width: 30vw;
@@ -50,11 +51,18 @@ li{
     justify-content: center;
     align-items: center;
 }
+a{
+    text-decoration: none;
+    color: #fff;
+}
 li:hover{
    
     border-radius: 5px;
     cursor: pointer;
     background-color: #0064D9;
+}
+a:hover{
+    color: #fff;
 }
 .paragraphClass{
     left: 0; 
@@ -63,25 +71,32 @@ li:hover{
 
  header{
      width: 100%;
-     height: 64vh;
+     /* height: 70vh; */
      background-image: url("/image/new.png");
-     background-position: center;
-     background-size: cover;
+     background-position: top;
+     background-size: contain;
      background-repeat: no-repeat;
      display: flex;
      flex-direction: column;
-     justify-content: space-evenly;
-     padding: 0 5vw;
+     /* justify-content: space-evenly; */
+     padding: 7vh 5vw;
+     box-sizing: border-box;
 
  }
  header h1{
-     font-size: 24pt;
+     width: 70%;
+     font-size: 28pt;
      font-weight: 600;
      color: #2D2D2D;
+     line-height: 1.5;
+     font-family: Nunito;
+
  }
  header span{
-     font-size: 10pt;
+     font-size: 12pt;
      color: #9D9D9D;
+     padding: 2vh 0;
+     line-height: 1.4;
  }
  header button{
      width: 40vw;
@@ -104,15 +119,405 @@ li:hover{
     backdrop-filter: blur(20px);
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+   margin-top: 4vh;
+}
+
+.main-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* client */
 .client{
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 .client img{
     width: 40%;
+}
+/* about us */
+
+.about-us-container{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4vh 0;
+}
+.about-us{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vh;
+}
+.about-us img{
+    width: 80%;
+    height: 30vh;  
+}
+.about-us h1 , .about-us h1{
+    width: 100%;
+    font-size: 28pt;
+     font-weight: 600;
+    font-family: poppins;
+    color: #2D2D2D
+
+}
+.about, .contact span{
+    width: 100%;
+    font-size: 14pt;
+    color: #9D9D9D;
+}
+/* service */
+
+.service-contauner{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 3vh 0;
+}
+.service{
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vh;
+}
+.service span {
+    font-size: 12pt;
+   text-align: center;
+   color: #9D9D9D;
+   margin-top: 2vh;
+}
+
+/* contact us */
+.contact-us-container{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact img{
+    width: 90%;
+    height: 90%;
+}
+.contact div{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact  button{
+    width: 40vw;
+    height: 5vh;
+    border-radius: 5px;
+    margin: 2vh;
+    font-weight: 500;
+}
+.contact  button:nth-child(1){
+    color: #0064D9;
+    border: 2px solid #0064D9;
+    background-color: #fff;
+}
+.contact  button:nth-child(2){
+    color: #fff;
+    border: none;
+    background: linear-gradient(95.13deg, #7D83FF 0%, #0064D9 100%);
+}
+
+
+/* footer */
+footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: linear-gradient(95.78deg, #7D83FF 0%, #0064D9 100%);
+    padding: 5vh 5vw;
+}
+.footer-item{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3vh;
+}
+.footer-item div{
+    width: 70%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-item div span{
+    width: 80%;
+}
+.footer-item span , .footer-item div span{
+    font-size: 12pt;
+    color: #fff;
+    font-weight: 500;
+}
+.footer-item div img{
+    width: 25px;
+    height: 25px;
+}
+
+/* landscape view */
+@media screen and (min-width:640px){
+    .nav{
+        display: flex;
+        flex-direction: row;
+        background-color: #fff;
+        
+    }
+    .logo{
+        height: 15vh;
+        width: 40%;
+        background-color: #fff;
+        position: fixed;
+        z-index: 20;
+    }
+    .fa-bars{
+         display: none;
+    }
+    ul{
+        width: 60%;
+        height: 15vh;
+        flex-direction: row;
+        top:unset;
+        left: 40%;
+        padding: unset;
+        background-color: unset;
+        background-color: #fff;
+    }
+    li{
+        width: 20%;
+        height: 60%;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    a{
+        color: #2D2D2D;
+    }
+    .paragraphClass{
+        left: unset; 
+    }
+    li:hover{
+        border-radius: 2px;
+        color: #fff;
+    }
+
+    /* header part */
+
+    header{
+        margin-top: 15vh;
+        /* height: 90vh; */
+        background-size: cover;
+   
+    }
+    header span{
+        width: 40%;
+        font-size: 11pt;
+    }
+    header button{
+        width: 15vw;
+        height: 10vh;
+       margin-top: 6vh;
+    }
+   .card{
+       width: 55%;
+       height: 12vh;
+       justify-content: space-around;
+       margin-left: 30%;
+   }
+   .card img{
+       width: 30px;
+       aspect-ratio: 1;
+   }
+   .card span{
+       width: 70%;
+   }
+   .client img{
+    width: 20%;
+    }
+
+    /* about us */
+    .about-us{
+        width: 50%;
+        justify-content: center;
+    }
+    .about-us img{
+        width: 80%;
+        height: 80%;
+    }
+    .abt{
+        text-align: right;
+    }
+
+        /* service */
+
+    .service{
+        width:28%;
+        margin-top: 6vh;
+    }
+    .service span{
+    font-size: 10pt;
+    }
+
+    /* conatct */
+    .contact-us-container{
+        margin: 6vh 0;
+    }
+    .contact{
+        width: 50%;
+    }
+    .contact span{
+        text-align: right;
+        font-size: 13pt;
+        margin: 2vh 0;
+    }
+    .contact div button{
+        height: 10vh;
+    }
+
+    /* footer */
+       .footer-item{
+        width: 33%;
+    }
+    .footer-item div{
+        height: 10vh;
+    }
+
+}
+
+/* web */
+
+@media screen and (min-width:900px){
+   
+    .logo{
+        width: 60%;
+        height: 8vh;
+        background-color: transparent;
+    }
+    .logo img{
+        width: 10vw;
+    }
+    ul{
+        width: 40%;
+        height: 8vh;
+        margin-left: 20%;
+        background-color: transparent;
+        font-weight: 500;
+    }
+
+    /* header part */
+
+    header{
+        margin-top: 0vh;
+        padding: 10vh 10vw;
+        height: 80vh;
+        background-size: contain;
+        background-position: right;
+   
+    }
+    header h1{
+        width: 55%;
+        font-size: 60px;
+    }
+    header span{
+        width: 38%;
+        font-size: 19px;
+    }
+    header button{
+        width: 10vw;
+        height: 5vh;
+       margin-top: 2vh;
+    }
+   .card{
+       width: 28%;
+       height: 8vh;
+       margin-top: unset;
+       margin-left: 59%;
+       margin-top: -8vh;
+       box-shadow: unset;
+   } 
+   .card span{
+       font-size: 17px;
+   }
+   
+   .client img{
+    width: 20%;
+    }
+
+    /* about us */
+    .about-us-container{
+        width: 85%;
+    }
+    .about-us h1 , .contact h1{
+        font-size: 60px;
+    }
+
+    /* service */
+    .service-contauner{
+        margin: 6vh 0;
+    }
+    .service{
+        width:25%;
+        margin-top: 6vh;
+    }
+    .service span{
+    width: 60%;
+    font-size: 12pt;
+    margin-top: 2vh;
+    }
+
+    /* contact us */
+    .contact-us-container{
+        width: 80%;
+        margin: 1vh 0;
+        justify-content: space-between;
+    }
+    .contact{
+        align-items: center;
+    }
+    .contact span{
+        width: 90%;
+    }
+    .contact div{
+        width: 100%;
+        justify-content: flex-end;
+    }
+    .contact img{
+        width: 90%;
+        height: 90%;
+    }
+    .contact div button{
+        width: 10vw;
+        height: 5vh;
+    } 
+
+    /* footer */
+    footer{
+        margin-top: 1vh;
+    }
+    .footer-item{
+        width: 20%;
+    }
+    .footer-item div{
+        height: 5vh;
+    }
+    .footer-item span{
+        margin: 1vh 0;
+    }
+
 }

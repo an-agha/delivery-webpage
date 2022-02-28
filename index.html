@@ -9,20 +9,20 @@
     <title>Delivery</title>
 </head>
 <body>
-   <nav>
-       <div class="logo">
+   <nav id="nav">
+       <div class="logo" id="logo">
            <img src="./image/logo.png" alt="logo">
            <i class="fa-solid fa-bars fa-2x" onclick="showItem()"></i>
        </div>
        <ul id="nav-show">
-           <li>Home</li>
-           <li>Service</li>
-           <li>About Us</li>
-           <li>Contact Us</li>
+           <li><a href="#home">Home</a></li>
+           <li><a href="#service">Service</a></li>
+           <li><a href="#aboutUs">About Us</a></li>
+           <li><a href="#contact">Contact Us</a></li>
        </ul>
    </nav>
    <!-- header -->
-   <header>
+   <header id="home">
        <h1>The Best Ever Courier Service In The World</h1>
        <span>
            Deliver fastest across 25000+ pin codes in world with real time shipment tracking feature. Get best international courier services.
@@ -35,14 +35,138 @@
        </div>
    </header>
 
-   <!-- client -->
+<div class="main-container">
+       <!-- client -->
 
-   <div class="client">
-       <img src="./image/Frame 3.png" alt="client1"> 
-       <img src="./image/Frame 4.png" alt="client2">
-       <img src="./image/Frame 5.png" alt="client3">
-       <img src="./image/Frame 6.png" alt="client4">
-   </div>
+        <div class="client">
+            <img src="./image/Frame 3.png" alt="client1"> 
+            <img src="./image/Frame 4.png" alt="client2">
+            <img src="./image/Frame 5.png" alt="client3">
+            <img src="./image/Frame 6.png" alt="client4">
+        </div>
+
+    <!-- about us -->
+
+    <div class="about-us-container" id="aboutUs">
+        <div class="about-us">
+            <img src="./image/aboutus.png" alt="">
+        </div>
+        <div class="about-us">
+            <h1>Who we are?</h1>
+            <span class="about abt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum, id porttitor maecenas amet.
+                Mattis quisque facilisi duis tellus lacus vitae. Malesuada nibh libero eget elementum in nec. Lorem auctor 
+                amet tristique est porttitor integer at. Risus massa 
+                id consectetur diam. Commodo nec, in tellus faucibus ornare elit bibendum risus lacinia. Ultrices porttitor 
+                sem ultricies amet. 
+            </span>
+        </div>
+        <div class="about-us">
+            <h1>We deliver very carefully</h1>
+            <span class="about">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fames a nisi, 
+            congue feugiat id dignissim pellentesque turpis condimentum.
+            Donec dictumst diam ut sollicitudin iaculis scelerisque. Augue nulla dolor tempus quis arcu natoque. 
+            </span>
+        </div>
+        <div class="about-us">
+            <img src="./image/aboutus2.png" alt="about us">
+        </div>
+
+        
+       
+    </div>
+
+    <!-- service -->
+
+    <div class="service-contauner" id="service">
+        <div class="service">
+            <img src="./image/Delivery.png" alt="truck">
+            <h3>By Land</h3>
+            <span>Land shipping is one of the oldest forms of transporting goods.</span>
+        </div>
+        <div class="service">
+            <img src="./image/Paper Ship.png" alt="ship">
+            <h3>By Sea </h3>
+            <span>By sea is cheap safe and suitable for all types of good</span>
+        </div>
+        <div class="service">
+            <img src="./image/1 Stop Flight.png" alt="">
+            <h3>By Air</h3>
+            <span>Air transport is undoubtedly the fastest mode of transport.</span>
+        </div>
+    </div>
+
+    <!-- contact us -->
+
+    <div class="contact-us-container" id="contact">
+        <div class="contact">
+            <img src="./image/pngegg (85).png" alt="">
+            
+        </div>
+        <div class="contact">
+            <h1>Our Network serve globally </h1>
+            <span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi orci, scelerisque id amet proin maecenas.
+                 Tellus ornare lacus adipiscing ut at felis. Facilisi in nunc.
+                
+            </span>
+            <div>
+                <button>Request call</button>
+                <button>Contact Us</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+
+<footer>
+    <div class="footer-item">
+        <div>
+            <img src="./image/phone-call.png" alt="phone">
+            <span>2345 2132 3432</span>
+        </div>
+        <div>
+            <img src="./image/mail.png" alt="mail">
+            <span>Johnduo@gmail.com</span>
+        </div>
+        <div>
+            <img src="./image/facebook.png" alt="facebook">
+            <span>Facebook</span>
+        </div>
+        <div>
+            <img src="./image/instagram.png" alt="insta">
+            <span>Instagram</span>
+        </div>
+        <div>
+            <img src="./image/linkedin.png" alt="linkedin">
+            <span>Linked In</span>
+        </div>
+    </div>
+    <div class="footer-item">
+        <span>About Us</span>
+        <span> Help</span>
+        <span> Testimonials</span>
+        <span>Contact Us</span>
+        <span>Improving Lives</span>
+        <span>Medical Services</span>
+    </div>
+    <div class="footer-item">
+        <span>Our Global Carrier Network</span>
+        <span>Become A Partner</span>
+        <span> Terms & Conditions</span>
+        <span> Privacy & Policy</span>
+    </div>
+    <div class="footer-item">
+            <span>Same Day Delivery</span>
+            <span> Cash On Delivery</span>
+            <span>Client Zone</span>
+            <span>Partner Zone</span>
+            <span>  Prohibited Items</span>
+            <span>Packaging Advice</span>
+    </div>
+</footer>
 
 </body>
 <script src="script.js"></script>
