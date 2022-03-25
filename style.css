@@ -56,7 +56,6 @@ a{
     color: #fff;
 }
 li:hover{
-   
     border-radius: 5px;
     cursor: pointer;
     background-color: #0064D9;
@@ -314,7 +313,6 @@ footer{
     }
     li:hover{
         border-radius: 2px;
-        color: #fff;
     }
 
     /* header part */
